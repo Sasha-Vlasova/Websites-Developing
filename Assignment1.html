@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <nav>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#fav">Favorites</a></li>
+            <li><a href="#interest">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #f7f5ef;
+            margin: 0;
+            color: #333;
+        }
+        h1{
+            color:lightseagreen;
+        }
+        h2{
+            color:lightseagreen;
+        }
+        h3{
+            color:darkblue;
+        }
+        ul{
+            list-style-type: square;
+        }
+        li {
+            margin: 16px;
+        }
+        .menu {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: lightseagreen;
+        }
+        .menu a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        .responsive-img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .cards {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            flex: 1 1 250px;
+            border-color:lightseagreen;
+        }
+        dt{
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        dd{
+            margin-left:20px;
+            margin-bottom:15px;
+        }
+        @media (max-width: 600px) {
+            h1{
+                font-size:26px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .menu{
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 id="home" >Home</h1>
+        <p>Welcome to my profile page! My name is Sasha, 
+            and I am currently a senior at Carroll University. 
+            I created this website to share a little about my background, 
+            favorite things, interests, and future goals. 
+            Feel free to explore the different sections to learn more about me.</p>
+        <picture>
+            <source media="(min-width: 700px)"
+                srcset="images/informal.jpg">
+            <img src="images/formal.jpg"
+                alt ="My formal picture"
+                class="responsive-img">
+        </picture>
+        <h2 id="about">About Me</h2>
+        <p>I am someone who enjoys learning new things and taking on challenges that help me grow. I value creativity, curiosity, and being open to new experiences. I also enjoy spending time with the people close to me and making memories through everyday experiences.</p>
+        
+        <h2 id="fav">Favorites</h2>
+        <ul>
+            <li>Books </li>
+            <li>Movies </li>  
+            <li>Traveling </li>
+        </ul>
+        <p>If I had to rank these from my most favorite to least favorite, I would
+    choose the following order:</p>
+        <ol>
+            <li>Traveling  </li>
+            <li>Books  </li>  
+            <li>Movies </li>
+        </ol>
+
+        <p>I would also like to share a few favorites and what makes them special to me!</p>
+        <dl>
+            <dt>Favorite Book</dt>
+            <dd>I enjoy fantasy books because I like getting immersed in different worlds and stories.</dd>
+
+            <dt>Favorite Movie</dt>
+            <dd>I enjoy movies that have an interesting story and characters that keep me engaged.</dd>
+
+            <dt>Favorite Place</dt>
+            <dd>I enjoy places where I can relax, explore something new, and spend time with people I care about.</dd>
+        </dl>
+
+        <h2 id="interest">Interests</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>HCI</h3>
+                <p>I am interested in Human-Computer Interaction (HCI) because I enjoy learning how people interact with technology. I want to understand how technology can be designed to be more useful, accessible, and enjoyable for different users.</p>
+            </div>
+
+            <div class="card">
+                <h3>Baking</h3>
+                <p>Baking is one of my favorite hobbies because I enjoy being creative and trying new recipes. It is also a relaxing activity that allows me to experiment with different flavors and techniques.</p>
+            </div>
+
+            <div class="card">
+                <h3>WWW</h3>
+                <p>One of the courses I am taking right now is World Wide Web Programming!
+                    
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Master or PhD</h3>
+                <p>After completing my current education, I would like to pursue a Master's degree or PhD in AI and Education or Educational Technology.</p>
+            </div>
+
+        </div>
+
+        <h2 id="contact">Contact</h2>
+        <p><a href="https://github.com/Sasha-Vlasova">Visit my GitHub profile</a> </p>
+        <p><a href="https://www.linkedin.com/in/sasha-vlasova/">Check out my LinkedIn</a></p>
+        <p>Or use my email to reach out - avlasova@carrollu.edu</p>
+
+        </main>
+</body>
+</html>
